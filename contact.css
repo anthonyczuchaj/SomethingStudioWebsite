@@ -72,11 +72,15 @@ main {
     text-align: center;
 }
 
-.contact p#email{
+.contact p#email {
     font-size: 1.4rem;
     margin-bottom: 25px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+
+    /* 🔧 FIX */
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 /* Form styling */
@@ -165,3 +169,4 @@ footer p {
     }
 
 }
+
