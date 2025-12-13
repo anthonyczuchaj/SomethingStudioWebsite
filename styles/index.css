@@ -1,0 +1,70 @@
+/* Main content */
+content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    padding: 2.5rem 2rem;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Card styling with modern glass look */
+content > div {
+    background: rgba(44, 31, 42, 0.85);
+    backdrop-filter: blur(6px);
+    border-radius: 13px;
+    padding: 1.0rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+content > div:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Hero section */
+.hero {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #323353, #905ea9);
+    text-align: center;
+    padding: 4rem 2rem;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* Individual cards */
+.about {
+    background: linear-gradient(135deg, #905ea9, #a884f3);
+    font-size: 1.15rem;
+}
+
+.game {
+    background: linear-gradient(135deg, #a884f3, #eaaded);
+    color: #111;
+    font-size: 1.15rem;
+}
+
+.notice {
+    background: linear-gradient(135deg, #eaaded, #c32454);
+    font-size: 1.15rem;
+}
